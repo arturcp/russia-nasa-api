@@ -1,4 +1,6 @@
 class RussiaApi < BaseApi
+  include ApiModule
+
   BASE_URL = 'https://datazen.katren.ru/calendar/day'
 
   private
