@@ -26,6 +26,8 @@ gem 'rest-client'
 
 gem 'dotenv-rails'
 
+gem 'sneakers'
+gem 'colorize'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 

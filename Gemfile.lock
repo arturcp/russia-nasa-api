@@ -56,10 +56,14 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
+    amq-protocol (2.3.0)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
     builder (3.2.4)
+    bunny (2.14.4)
+      amq-protocol (~> 2.3, >= 2.3.0)
     byebug (11.1.1)
+    colorize (0.8.1)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     domain_name (0.5.20190701)
@@ -142,6 +146,15 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     ruby_dep (1.5.0)
+    serverengine (2.0.7)
+      sigdump (~> 0.2.2)
+    sigdump (0.2.4)
+    sneakers (2.11.0)
+      bunny (~> 2.12)
+      concurrent-ruby (~> 1.0)
+      rake
+      serverengine (~> 2.0.5)
+      thor
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -172,11 +185,13 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  colorize
   dotenv-rails
   listen (>= 3.0.5, < 3.2)
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
   rest-client
+  sneakers
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
